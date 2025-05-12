@@ -9,27 +9,118 @@
   <link rel="stylesheet" href="assets/css/body.css">
   <script src="https://unpkg.com/scrollreveal"></script>
   <style>
-    #quizsus{
+    #quizsus {
       background-color: green;
     }
-    #titulo{
-      position:relative;
+
+    #titulo {
+      position: relative;
       left: -300px;
     }
-    #navv{
-      position:relative;
-      left:320px;
+
+    #navv {
+      position: relative;
+      left: 320px;
+    }
+
+    #ods12 {
+      padding: 50px;
+      background-color: #f1f9f1;
+      color: #333;
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    #ods12 h2 {
+      font-size: 2.2em;
+      color: #4CAF50;
+      margin-bottom: 20px;
+      transition: color 0.3s;
+    }
+
+    #ods12 p {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .ods-wheel {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      gap: 20px;
+    }
+
+    .ods-action {
+      background-color: #4CAF50;
+      color: white;
+      padding: 25px;
+      width: 220px;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .ods-action h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .ods-action p {
+      font-size: 1.1em;
+    }
+
+    .ods-action:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .learn-more {
+      background-color: #2c6e49;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 30px;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
+    }
+
+    .learn-more:hover {
+      background-color: #1f4d32;
+    }
+
+    #ods12:hover {
+      background-color: #e8f5e9;
+    }
+
+    @media (max-width: 768px) {
+      .ods-wheel {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .ods-action {
+        width: 90%;
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-        <h2 id="titulo">Blog Sustentável</h2>
-        <nav id="navv">
-          <a href="#">Início</a>
-          <a href="quiz.html" id="quizsus">QUIZ DE SUSTENTABILIDADE!!</a>
-        </nav>
+    <h2 id="titulo">Blog Sustentável</h2>
+    <nav id="navv">
+      <a href="#">Início</a>
+      <a href="quiz.html" id="quizsus">QUIZ DE SUSTENTABILIDADE!!</a>
+    </nav>
   </header>
 
   <div class="container">
@@ -92,6 +183,34 @@
       </ul>
     </aside>
   </div>
+  <section id="ods12" class="ods-section">
+    <h2>Objetivo de Desenvolvimento Sustentável 12: Produção e Consumo Responsáveis</h2>
+    <p>O ODS 12 visa garantir padrões de produção e consumo sustentáveis, promovendo o uso eficiente de recursos e a
+      redução do desperdício. Aqui estão algumas ações que você pode adotar:</p>
+
+    <div class="ods-wheel">
+      <div class="ods-action" id="action-1">
+        <h3>Reduzir o Desperdício</h3>
+        <p>Evite o desperdício de alimentos, materiais e recursos. Reutilize sempre que possível!</p>
+      </div>
+      <div class="ods-action" id="action-2">
+        <h3>Consumir com Consciência</h3>
+        <p>Opte por produtos com menor impacto ambiental e que incentivem a economia circular.</p>
+      </div>
+      <div class="ods-action" id="action-3">
+        <h3>Reciclar e Reutilizar</h3>
+        <p>Recicle sempre que possível e compre produtos reutilizáveis para reduzir o consumo de novos recursos.</p>
+      </div>
+      <div class="ods-action" id="action-4">
+        <h3>Priorizar Energias Renováveis</h3>
+        <p>Escolha energias renováveis sempre que possível, como solar e eólica.</p>
+      </div>
+    </div>
+
+    <a class="learn-more"
+      onclick="window.location.href='https://www.un.org/sustainabledevelopment/sustainable-consumption-production/';">Saiba
+      Mais</a>
+  </section>
 
 
   <script>
@@ -108,6 +227,25 @@
       duration: 1000,
       delay: 500
     });
+
+    ScrollReveal().reveal('.ods-action', {
+      origin: 'bottom',
+      distance: '40px',
+      duration: 1000,
+      interval: 200,
+      scale: 0.8,
+      easing: 'ease-out'
+    });
+
+    ScrollReveal().reveal('.learn-more', {
+      origin: 'bottom',
+      distance: '20px',
+      duration: 1000,
+      delay: 500,
+      scale: 0.9,
+      easing: 'ease-out'
+    });
+
   </script>
 </body>
 
