@@ -1,0 +1,29 @@
+html, body {
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Garante que o body não ultrapasse a largura da tela */
+}
+img {
+    max-width: 100%; /* Impede que a imagem ultrapasse a largura da tela */
+    display: block; /* Remove espaços extras ao redor da imagem */
+}
+#quiz{
+    width: 550px;
+    height: 180px;
+    font-size: 50px;
+    position: absolute;
+    border-radius: 80px;
+    border-color: green;
+    border: 5px solid green;
+    background-color: #f0f1e3;
+    left:910px;
+    top:465px;
+    transition: 0.3s;
+}
+#quiz:hover{
+    -ms-transform: scale(1.3);
+    transform: scale(1.1);
+    box-shadow: 10px 10px darkgreen;
+}

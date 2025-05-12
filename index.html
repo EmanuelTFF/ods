@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Sustentabilidade Corporativa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/body.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    #quizsus{
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Blog Sustentável</h2>
+    <nav>
+      <a href="#">Início</a>
+      <a href="quiz.html" id="quizsus">QUIZ DE SUSTENTABILIDADE!!</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main class="main">
+      <article class="post" id="reduzir">
+        <h2>Como a TI verde pode reduzir custos na sua empresa</h2>
+        <img src="https://img.freepik.com/fotos-gratis/forma-tridimensional-do-planeta-terra_23-2151133936.jpg"
+          width="1px" alt="TI sustentável" />
+        <p>
+          A implementação de práticas de TI verde, como a virtualização de servidores, o uso de datacenters eficientes e
+          a gestão inteligente de energia, reduz não apenas o consumo elétrico, mas também os custos operacionais.
+          Adotar a tecnologia certa ajuda a construir uma operação mais enxuta e sustentável.
+        </p>
+      </article>
+
+
+      <article class="post" id="escritorio">
+        <h2>5 práticas para tornar a infraestrutura de TI mais sustentável</h2>
+        <img
+          src="https://i0.wp.com/blog.cicloorganico.com.br/wp-content/uploads/2019/05/dicas-de-sustentabilidade.jpg?fit=696%2C484&ssl=1"
+          alt="Escritório sustentável" />
+        <p>
+          Atualizar equipamentos para versões energeticamente eficientes, utilizar software de gestão de energia, optar
+          por cloud computing sustentável, promover o descarte correto de eletrônicos e incentivar o home office são
+          práticas fundamentais para diminuir o impacto ambiental da infraestrutura de TI.
+        </p>
+      </article>
+
+      <article class="post" id="entrevista">
+        <h2>Entrevista: A importância da educação em TI sustentável nas empresas</h2>
+        <img
+          src="https://png.pngtree.com/thumb_back/fw800/background/20240421/pngtree-transport-yourself-to-a-world-of-sustainability-and-eco-friendliness-image_15718410.jpg"
+          alt="Educação ambiental" />
+        <p>
+          Conversamos com Marcos Silva, especialista em TI Verde, que defende que a transformação digital precisa ser
+          acompanhada de responsabilidade ambiental. Treinar equipes de TI sobre práticas sustentáveis é essencial para
+          reduzir a pegada de carbono do setor tecnológico.
+        </p>
+      </article>
+
+      <article class="post" id="parcerias">
+        <h2>Parcerias tecnológicas sustentáveis: o diferencial competitivo</h2>
+        <img src="https://img.freepik.com/fotos-gratis/forma-tridimensional-do-planeta-terra_23-2151133936.jpg"
+          alt="Fornecedores sustentáveis" />
+        <p>
+          Trabalhar com fornecedores de tecnologia que adotam práticas sustentáveis, como produção de hardware de baixo
+          impacto ambiental e uso de energia renovável em datacenters, fortalece o compromisso ambiental da sua empresa
+          e traz vantagem competitiva no mercado cada vez mais consciente.
+        </p>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <h3>Categorias</h3>
+      <ul>
+        <li><a href="#reduzir">TI Verde e Redução de Custos</a></li>
+        <li><a href="#escritorio">Infraestrutura Sustentável</a></li>
+        <li><a href="#entrevista">Educação em TI Sustentável</a></li>
+        <li><a href="#parcerias">Parcerias Tecnológicas Verdes</a></li>
+      </ul>
+    </aside>
+  </div>
+
+
+  <script>
+    ScrollReveal().reveal('.post', {
+      origin: 'bottom',
+      distance: '30px',
+      duration: 1000,
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.sidebar', {
+      origin: 'right',
+      distance: '40px',
+      duration: 1000,
+      delay: 500
+    });
+  </script>
+</body>
+
+</html>

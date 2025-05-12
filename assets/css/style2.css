@@ -1,0 +1,11 @@
+body{
+    background-color: #82d488;
+}
+#titulo1{
+    text-shadow: 2px 1px black;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
