@@ -31,6 +31,7 @@
   }
 
   /* Header Moderno */
+
   header {
     background: linear-gradient(135deg, var(--verde-primario), var(--azul-primario));
     color: var(--branco);
@@ -40,18 +41,24 @@
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: nowrap;
     box-shadow: var(--sombra);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  
+}
 
-  header h2 {
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Ou a largura máxima que você desejar */
+}
+
+header h2 {
     font-weight: 700;
     font-size: 1.8rem;
     letter-spacing: 0.5px;
@@ -60,16 +67,15 @@
     background-clip: text;
     color: transparent;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+    margin: 0; /* Remove margens padrão */
+}
 
-  header nav {
+header nav {
     display: flex;
     align-items: center;
-    margin-top: 0.5rem; /* Espaço entre o título e os links */
-  }
-  
+}
 
-  header nav a {
+header nav a {
     color: var(--branco);
     text-decoration: none;
     margin: 0 1rem;
@@ -79,12 +85,12 @@
     border-radius: 50px;
     font-size: 0.95rem;
     letter-spacing: 0.3px;
-  }
+}
 
-  header nav a:hover {
+header nav a:hover {
     background-color: rgba(255, 255, 255, 0.15);
     transform: translateY(-2px);
-  }
+}
 
   /* Container Principal */
   .container {
