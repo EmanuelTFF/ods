@@ -40,9 +40,9 @@
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: center; /* conteúdo centralizado */
+    justify-content: space-between;
     align-items: center;
-    gap: 32rem; /* <<--- Aqui aumentamos o espaço! */
+    flex-wrap: wrap;
     box-shadow: var(--sombra);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
